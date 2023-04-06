@@ -25,7 +25,9 @@ The first image below shows what the generator should look like before a passwor
 ![Before Generation](./assests/images/blankGenerator.png) <br />
 
 The second image shows what a generated password might look like:
-![After Generation](./assests/images/generatedPassword.png) 
+![After Generation](./assests/images/generatedPassword.png) <br />
+
+Here is a link to the deployed site: https://koi-as.github.io/random-password-generator/
 
 ## Credits
 
