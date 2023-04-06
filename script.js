@@ -7,7 +7,7 @@ var lowercaseLetters = characterCodes.map(code => String.fromCharCode(code));
 var uppercaseLetters = lowercaseLetters.map(letter => letter.toUpperCase());
 // Numbers and Special characters
 var numbers = [1,2,3,4,5,6,7,8,9,0];
-var specialCharacters = ["!","@","#","$","%","^","&","*"]
+var specialCharacters = ["!","@","#","$","%","^","&","*", "(", ")", "[", "]", "{", "}", "-", "_", "=", "+", ";", ":",]
 
 function generatePassword (length, lowerSelect, upperSelect, numbersSelect, specialSelect) {
   //1. prompt the user
