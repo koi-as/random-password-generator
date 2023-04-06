@@ -11,15 +11,12 @@ var specialCharacters = ["!","@","#","$","%","^","&","*"]
 
 function generatePassword (length, lowerSelect, upperSelect, numbersSelect, specialSelect) {
   //1. prompt the user
-  var lengthSelect = prompt("How many characters do you want in your password? (betweem 8-128 characters)");
+  var lengthSelect = prompt("How many characters do you want in your password? (between 8-128 characters)");
 
   if (lengthSelect >= 8 && lengthSelect <= 128) {
     var length = lengthSelect;
-  } else if (lengthSelect < 8) {
-    alert("Please choose a length greater than 7 characters!");
-    return;
-  } else if (lengthSelect > 128) {
-    alert("Please choose a length less than 129 characters!");
+  } else if (lengthSelect < 8 || lengthSelect > 128) {
+    alert("Please choose a length between 8 and 128 characters!");
     return;
   } else {
     alert("Please choose a valid number length for your password!");
