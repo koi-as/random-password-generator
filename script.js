@@ -1,17 +1,33 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+var characterCodes = Array.from(Array(26)).map( (_, i) => i + 97);
+var lowercaseLetters = characterCodes.map(code => String.fromCharCode(code));
+var uppercaseLetters = lowercaseLetters.map(letter => letter.toUpperCase());
+
+var numbers = [1,2,3,4,5,6,7,8,9,0];
+var specialCharacters = ["!","@","#","$","%","^","&","*"]
+
+console.log(lowercaseLetters);
+console.log(uppercaseLetters);
+console.log(numbers);
+console.log(specialCharacters);
+
 function generatePassword () {
   console.log("Button press");
+
   //1. prompt the user
   //  a. select password length 8 < 128
   //  b. select lowercase letters
   //  c. select uppercase letters
   //  d. select numbers
   //  e. select special characters
+  
   //2. validate inputs
-  //3. display password
 
+  //3. generate password
+
+  //4. display password
   return "Password";
 }
 
